@@ -6,3 +6,5 @@ Está sendo utilizado banco local, ou seja, quando a API parar de rodar, tudo qu
 É necessário logar para acessar os endpoints, tem tudo explicado no Swagger mas também vai ter no repositório um Collection para postman, para ser mais fácil
 
 Não vai dar tempo de fazer GitHub Actions e Pipelines nem de implementar os testes, eu ia fazer testes bem simples só pra ter, porém, não consegui ajeitar a tempo.
+
+Sobre o postman, caso for necessário, se ver que a porta ficou diferente na hora de rodar a API, somente alterar no caminho, eu ia alterar para ser uma variável de ambiente e deixar mais dinâmico, porém também não deu tempo.
