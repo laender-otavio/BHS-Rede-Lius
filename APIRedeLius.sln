@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Servicos", "2 - Servicos", "{89C1B878-F5FB-492E-AA88-D4C608A27273}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{0DA5FC3D-BE79-479F-9535-7B89E1F92EC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Dominio", "4 - Dominio", "{CDBC762C-3D68-4179-9BF5-4068F4700E32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIRedeLius.Dominio", "APIRedeLius.Dominio\APIRedeLius.Dominio.csproj", "{9599F825-8080-4543-8B79-6904A39033F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIRedeLius.Infra.Data", "APIRedeLius.Infra.Data\APIRedeLius.Infra.Data.csproj", "{D059BE74-A000-4C5B-ABD8-5F9C0EDBEB93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIRedeLius.Servicos", "APIRedeLius.Servicos\APIRedeLius.Servicos.csproj", "{11BB2EBE-4DEE-473C-B011-F8610E5AC3FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIRedeLius.API", "APIRedeLius.API\APIRedeLius.API.csproj", "{027447AC-BC30-4D58-8424-8E015D352CD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9599F825-8080-4543-8B79-6904A39033F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9599F825-8080-4543-8B79-6904A39033F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9599F825-8080-4543-8B79-6904A39033F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9599F825-8080-4543-8B79-6904A39033F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D059BE74-A000-4C5B-ABD8-5F9C0EDBEB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D059BE74-A000-4C5B-ABD8-5F9C0EDBEB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D059BE74-A000-4C5B-ABD8-5F9C0EDBEB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D059BE74-A000-4C5B-ABD8-5F9C0EDBEB93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BB2EBE-4DEE-473C-B011-F8610E5AC3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BB2EBE-4DEE-473C-B011-F8610E5AC3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BB2EBE-4DEE-473C-B011-F8610E5AC3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BB2EBE-4DEE-473C-B011-F8610E5AC3FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027447AC-BC30-4D58-8424-8E015D352CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027447AC-BC30-4D58-8424-8E015D352CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027447AC-BC30-4D58-8424-8E015D352CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027447AC-BC30-4D58-8424-8E015D352CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9599F825-8080-4543-8B79-6904A39033F1} = {CDBC762C-3D68-4179-9BF5-4068F4700E32}
+		{D059BE74-A000-4C5B-ABD8-5F9C0EDBEB93} = {0DA5FC3D-BE79-479F-9535-7B89E1F92EC0}
+		{11BB2EBE-4DEE-473C-B011-F8610E5AC3FC} = {89C1B878-F5FB-492E-AA88-D4C608A27273}
+		{027447AC-BC30-4D58-8424-8E015D352CD5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {233B640F-A2F8-4195-A2EC-20631270AD79}
+	EndGlobalSection
+EndGlobal
