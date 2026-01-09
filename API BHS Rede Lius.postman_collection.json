@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "02d1af10-9ed8-41ae-bb2e-48986bbc3b6d",
+		"name": "API BHS Rede Lius",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17835247"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();\r",
+							"const token = jsonData.data;\r",
+							"\r",
+							"pm.collectionVariables.set(\"ApiBhsAccessToken\", token);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7053/api/Autenticacao",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7053",
+					"path": [
+						"api",
+						"Autenticacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Aluno",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{ApiBhsAccessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Laender\",\r\n  \"email\": \"tavinholaender@gmail.com\",\r\n  \"serie\": \"Quinta série\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7053/api/Alunos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7053",
+					"path": [
+						"api",
+						"Alunos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "ApiBhsAccessToken",
+			"value": ""
+		}
+	]
+}
